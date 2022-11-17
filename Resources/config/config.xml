@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Basic Configuration</title>
+        <title lang="de-DE">Grundeinstellungen</title>
+
+        <input-field type="int">
+            <name>intensity</name>
+            <required>true</required>
+            <defaultValue>65</defaultValue>
+            <label>Milliseconds until a link gets preloaded, when the mouse is over it.</label>
+            <label lang="de-DE">Millisekunden bis ein Link vorgeladen wird, wenn die Maus darüber ist.</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>mousedown</name>
+            <required>true</required>
+            <defaultValue>false</defaultValue>
+            <label>Triggering a click when the mouse is pressed.</label>
+            <label lang="de-DE">Auslösen eines Klicks, wenn die Maus gedrückt wird.</label>
+        </input-field>
+    </card>
+</config>

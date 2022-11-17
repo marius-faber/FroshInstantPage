@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/app-system/0.2.0/src/Core/Content/App/Manifest/Schema/manifest-1.0.xsd">
+    <meta>
+        <name>InstantPage</name>
+        <label>instant.page</label>
+        <label lang="de-DE">instant.page</label>
+        <description>Faster loading times by preloading links.</description>
+        <description lang="de-DE">Schnellere Ladezeiten durch das Vorladen von Links.</description>
+        <author>Marius Faber</author>
+        <copyright>Marius Faber</copyright>
+        <version>1.0.0</version>
+        <icon>icon.png</icon>
+        <license>MIT</license>
+    </meta>
+</manifest>

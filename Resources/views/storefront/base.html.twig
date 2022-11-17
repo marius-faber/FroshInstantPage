@@ -1,0 +1,33 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% set intensity = config('InstantPage.config.intensity') %}
+{% set mousedown = config('InstantPage.config.mousedown') %}
+
+{% if mousedown == true %}
+    {% set dataMousedown = "data-instant-mousedown-shortcut" %}
+{% endif %}
+
+{% block base_body %}
+    <body data-instant-intensity="{{ intensity }}" {{ dataMousedown }} class="{% block base_body_classes %}is-ctl-{{ controllerName|lower }} is-act-{{ controllerAction|lower }}{% endblock %}">
+
+    {% block base_body_inner %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block base_scroll_up %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block base_cookie_permission %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block base_pseudo_modal %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block base_body_script %}
+        {{ parent() }}
+    {% endblock %}
+    </body>
+{% endblock %}
